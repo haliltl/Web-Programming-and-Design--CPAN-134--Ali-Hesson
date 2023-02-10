@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>This is my first form</title>
+    </head>
+    <body>
+        <form action = "processmyinput.php" method="post" name="Myfirstform" id="Myfirstform">
+            Username <input type="text" id="Username" name = "Username" maxlength="10">
+            <br>
+            <br>
+            Password <input type="password" name="password" id="passwordId">
+            <br>
+            <br>
+            Email <input type="text" id="email" name = "Email" maxlength="10">
+            <br>
+            <br>
+            Comments 
+            <br>
+            <textarea name="comments" id="commentID" cols="30" rows="3"></textarea>
+            <br>
+            <br>
+            <b>Check Box</b> 
+            <br>
+            <input type= "checkbox" name="MyCheckBox" id="MyCheckBoxID" value="html">
+            <label for="MyCheckBoxID">HTML</label>
+            <br>
+            <input type="checkbox" name="MyCheckBox2" id="MyCheckBox2ID" value="CSS">
+            <label for="MyCheckBox2ID">CSS</label>
+            <br>
+            <input type="checkbox" name="MyCheckBox3" id="MyCheckBox3ID" value="JavaScript">
+            <label for="MyCheckBox3ID">JavaScript</label>
+            <br>
+            <br>
+            <input type="radio" name="courses" id="course1" value="CPAN134"> 
+            <label for="course1">CPAN134</label>
+            <br>
+            <input type="radio" name="courses" id="course2" value="CPAN134">
+            <label for="course2">CPAN133</label>
+            <br>
+            <br>
+            <input type="submit" name="MyButton" id="MyButton" value="Submit">
+            <input type="reset" name="MyResetButton" id="MyResetButton" value="Reset">
+            <br>
+            
+        </form>
+    </body>
+</html>
