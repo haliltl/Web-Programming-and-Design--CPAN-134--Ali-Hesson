@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-
+        <title>Contract</title>
     </head>
+    
     <body style="background-image: url(contractform.jpeg);">
-        <header>
 
-        </header>
+        <div id="contractform-header">
+            <center><header style="background-color: white; height: 40px; width: 200px; border-radius: 30px;">
+                <h1>Contract</h1>
+            </center></header>
+        </div>
+
+        <div id="contractform-nav">
+            <nav><center><strong style="background-color: white;">
+                <a href="homepage.html" style="color:black;">Homepage</a>
+                <a href="bio.html" style="color:black;">Bio</a>
+                <a href="showcase.html" style="color:black;">Showcase</a>
+                <a href="contractform.html" style="color:black;">Contract</a>
+                <a href="resume.html" style="color:black;">Resume</a>   
+                <a href="contact.html" style="color:black;">Contact</a>            
+            </strong></center></nav>
+        </div>
+
         <main>
-
+            <br>
+            <br>
+            <p><center><h3>Contract form</h3></center></p>
+            <p><center>Please fill out the information below if you would like a copy of my contract</center></p>
+            <form action="formsubmission.html" method="get" class="contractform">
+                <center><fieldset style="background-color: white; background-blend-mode: lighten; width: 400px;"><legend>Contract Form</legend>
+                    <br>
+                    First Name 
+                    <input type="text" name="fname" id="Firstname" minlength="1" required>
+                    <br>
+                    <br>
+                    Last Name
+                    <input type="text" name="lname" id="Lastname" minlength="1" required>
+                    <br>
+                    <br>
+                    Company
+                    <input type="text" name="cname" id="Companyname">
+                    <br>
+                    <br>
+                    Email Address
+                    <input type="text" name="eaddress" id="Emailaddress" required>
+                    <br>
+                    <br>
+                    <input type="submit" name="sbutton" id="Submitbutton" value="Submit"> <input type="reset" name="rbutton" id="Resetbutton" value="Reset">
+                </fieldset></center>
+            </form>
         </main>
-        <footer>
 
-        </footer>
+        <div id="contractform-footer">
+            <footer><center>
+                <p>Creator: Halil Tugrul <br> Contact:<a href="mailto:haliltugrul94@gmail.com">Haliltugrul94@gmail.com</a></p>
+            </center></footer>
+        </div>
+
     </body>
+
 </html>
