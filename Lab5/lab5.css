@@ -1,0 +1,33 @@
+header img {
+    float: left;
+    margin-left: 20px;
+}
+header h2{
+    color: orange;
+    font-size: 220%;
+    text-shadow: 2px 2px black;
+    margin-left: 150px;
+    margin-bottom: .25em;
+    font-style: italic;
+}
+header h3{
+    color: black;
+    font-size: 140%;
+    margin-left: 150px;
+    margin-bottom: .25em;
+}
+main h2::first-letter{
+    font-size: 220%;
+}
+a:link{
+    color: orange;
+}
+a:hover{
+    color: green;
+}
+a:visited{
+    color: black;
+}
+.bold{
+    font-weight: bold;
+}
