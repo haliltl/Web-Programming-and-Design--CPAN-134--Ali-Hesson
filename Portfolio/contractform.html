@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+    <head id="contractform-head" class="contractform-head">
+        <meta charset="UTF-8">
         <title>Contract</title>
+        <link rel="stylesheet" href="contractform.css">
     </head>
     
-    <body style="background-image: url(contractform.jpeg);">
+    <body>
 
-        <div id="contractform-header">
-            <center><header style="background-color: white; height: 40px; width: 200px; border-radius: 30px;">
+        <div id="contractform-header" class="contractform-header">
+            <header>
                 <h1>Contract</h1>
-            </center></header>
+            </header>
         </div>
 
-        <div id="contractform-nav">
-            <nav><center><strong style="background-color: white;">
-                <a href="homepage.html" style="color:black;">Homepage</a>
-                <a href="bio.html" style="color:black;">Bio</a>
-                <a href="showcase.html" style="color:black;">Showcase</a>
-                <a href="contractform.html" style="color:black;">Contract</a>
-                <a href="resume.html" style="color:black;">Resume</a>   
-                <a href="contact.html" style="color:black;">Contact</a>            
-            </strong></center></nav>
+        <div id="contractform-nav" class="contractform-nav">
+            <nav>
+                <a href="homepage.html">Homepage</a>
+                <a href="bio.html">Bio</a>
+                <a href="showcase.html">Showcase</a>
+                <a href="contractform.html">Contract</a>
+                <a href="resume.html">Resume</a>   
+                <a href="contact.html">Contact</a>            
+            </nav>
         </div>
 
-        <div id=""></div>
+        <div id="contractform-main" class="contractform-main">
             <main>
                 <br>
                 <br>
-                <p><center><h3>Contract form</h3></center></p>
-                <p><center>Please fill out the information below if you would like a copy of my contract</center></p>
+                <p><h3>Contract form</h3></p>
+                <p>Please fill out the information below if you would like a copy of my contract, or click this <a href="contractform.html">Link</a> to download a copy </p>
                 <form action="formsubmission.html" method="get" class="contractform">
-                    <center><fieldset style="background-color: white; background-blend-mode: lighten; width: 400px;"><legend>Contract Form</legend>
+                    <fieldset><legend>Contract Form</legend>
                         <br>
                         First Name 
                         <input type="text" name="fname" id="Firstname" minlength="1" required>
@@ -50,14 +52,15 @@
                         <br>
                         <br>
                         <input type="submit" name="sbutton" id="Submitbutton" value="Submit"> <input type="reset" name="rbutton" id="Resetbutton" value="Reset">
-                    </fieldset></center>
+                    </fieldset>
                 </form>
             </main>
+        </div>
 
-        <div id="contractform-footer">
-            <footer><center>
-                <p>Creator: Halil Tugrul <br> Contact:<a href="mailto:haliltugrul94@gmail.com">Haliltugrul94@gmail.com</a></p>
-            </center></footer>
+        <div id="contractform-footer" class="contractform-footer">
+            <footer>
+                <p><strong>Creator: </strong>Halil Tugrul <br><strong>Contact: </strong><a href="mailto:haliltugrul94@gmail.com">Haliltugrul94@gmail.com</a></p>
+            </footer>
         </div>
 
     </body>

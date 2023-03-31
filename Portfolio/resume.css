@@ -1,0 +1,40 @@
+body{
+    background-image: url(resume.jpeg);
+}
+.resume-header{
+    margin: auto;
+    font-style: italic;
+    margin-bottom: .25em;
+    text-align: center;
+}
+header h1::first-letter{
+    font-size: larger;
+}
+header{
+    text-shadow: rgb(0, 13, 72) 1px 0px 10px;
+}
+.resume-nav{
+    font-weight: bold;
+    text-align: center;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: cadetblue;
+}
+#resume-main{
+    margin: auto;
+    text-align: center;
+}
+.resume-footer{
+    text-align: center;
+    margin: auto;
+    margin-top: 3em;
+}

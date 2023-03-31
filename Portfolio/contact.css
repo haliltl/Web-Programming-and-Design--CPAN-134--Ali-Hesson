@@ -1,0 +1,39 @@
+body{
+    background-image: url(contact.jpeg);
+}
+.contact-header{
+    margin: auto;
+    font-style: italic;
+    margin-bottom: .25em;
+    text-align: center;
+}
+header h1::first-letter{
+    font-size: larger;
+}
+header{
+    text-shadow: rgb(0, 13, 72) 1px 0px 10px;
+}
+.contact-nav{
+    font-weight: bold;
+    text-align: center;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: cadetblue;
+}
+main{
+    margin-top: 5em;
+}
+#contact-footer{
+    text-align: center;
+    margin: auto;
+    margin-top: 6em;
+}

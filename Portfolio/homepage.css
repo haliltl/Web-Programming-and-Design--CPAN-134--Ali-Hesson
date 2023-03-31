@@ -1,0 +1,46 @@
+body{
+    background-image: url(homepage.jpg);
+    
+}
+.homepage-header{
+    margin: auto;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: .25em;
+}
+header h1::first-letter{
+    font-size: larger;
+}
+header{
+    text-shadow: rgb(0, 13, 72) 1px 0 10px;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: cadetblue;
+}
+#homepage-nav{
+    text-align: center;
+    font-weight: bold;
+}
+.homepage-main{
+    margin: auto;
+    font-size: xx-large;
+    background-color: white; width: 450px; border-radius: 10px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1em;
+    border: 1px solid black;
+}
+#homepage-footer{
+    margin: auto;
+    text-align: center;
+    margin-top: 3em;
+}

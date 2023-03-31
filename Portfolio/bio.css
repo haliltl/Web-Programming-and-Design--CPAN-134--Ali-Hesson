@@ -1,0 +1,57 @@
+body{
+    background-image: url(bio.jpeg);
+}
+.bio-header{
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: .25em;
+}
+header h1::first-letter{
+    font-size: larger;
+}
+header{
+    text-shadow: rgb(0, 13, 72) 1px 0px 10px;
+}
+#bio-nav{
+    font-weight: bold;
+    text-align: center;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: cadetblue;
+}
+main h3{
+    text-align: center;
+}
+.bio-biography{
+    margin: auto;
+    background-color: white; width: 450px; border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 4em;
+    float: left;
+    margin-left: 20em;
+}
+.bio-portrait{
+    float: right;
+    border: 1px solid black;
+}
+main .bio-portrait{
+    margin: 4em;
+    margin-right: 20em;
+    padding: 20px 20px;
+}
+footer{
+    margin: auto;
+    text-align: center;
+    margin-top: 3em;
+    clear: both;
+}
