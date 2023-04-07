@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Part 1</title>
+        <link rel="stylesheet" href="part1.css">
+    </head>
+    <header>
+        <h1 style="text-align: center;">Calculator</h1>
+    </header>
+        <body>
+
+            <div id="table">
+                <label for="roomrent">
+                    Room Rental: <input type="number" id="roomrent" onkeyup="calculateTotalandTax(this.value);">
+                </label>
+                <label for="food">
+                    Food: <input type="number" id="food" onkeyup="calculateTotalandTax(this.value);">
+                </label>
+                <label for="entertain">
+                    Entertainment: <input type="number" id="entertain" onkeyup="calculateTotalandTax(this.value);">
+                </label>
+                <label for="total">
+                    Total: <input type="number" id="total" disabled>
+                </label>
+                <label for="tax">
+                    With Tax: <input type="number" id="tax" disabled>
+                </label>
+            </div>
+        <script>
+            function calculateTotalandTax(value){
+                var total;
+                var tax;
+                var food = parseFloat(document.getElementById("food").value);
+                var roomrent = parseFloat(document.getElementById("roomrent").value);
+                var entertain = parseFloat(document.getElementById("entertain").value);
+                total = (food + roomrent + entertain).toFixed(2);
+                document.getElementById("total").value = total;
+                tax = (total * 1.13).toFixed(2);
+                document.getElementById("tax").value = tax;
+            }
+
+        </script>
+    </body>
+</html>
