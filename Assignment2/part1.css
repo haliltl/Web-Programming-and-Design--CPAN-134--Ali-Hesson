@@ -1,9 +1,6 @@
 label {
     display:block;
   }
-  input:required + span:after {
-    content: "Required";
-  }
   #table{
     margin: auto; 
     width: 275px; 

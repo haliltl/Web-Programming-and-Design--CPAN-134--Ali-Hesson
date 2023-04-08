@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Part 2</title>
+    </head>
+    <header><h1>Javascript Features</h1></header>
+    <body>
+        <h2>Country:</h2>
+        <p style="font-size: 25px;" id="can">Canada</p>
+        <h2>Capital:</h2>
+        <p style="font-size: 25px;" id="ott">Ottawa</p>
+        <button onclick="hideCapital()">Hide Capital Name</button>
+        <button onclick="showCapital()">Show Capital Name</button>
+        <button onclick="hideOrShow()">Toggle</button>
+        <h2>Hover on this paragraph for Yellow</h2>
+        <h2>Click on this paragraph for Green example.</h2>
+        <script>
+            function hideCapital(){
+                var hidden = document.getElementById("ott");
+                hidden.style.display = "none";
+            }
+            function showCapital(){
+                var shown = document.getElementById("ott");
+                shown.style.display = "block";
+            }
+            function hideOrShow() {
+                var hs = document.getElementById("ott");
+                if (hs.style.display == "none") {
+                hs.style.display = "block";
+                } else {
+                hs.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
