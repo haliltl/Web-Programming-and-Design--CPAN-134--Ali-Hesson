@@ -11,8 +11,8 @@
         <button onclick="hideCapital()">Hide Capital Name</button>
         <button onclick="showCapital()">Show Capital Name</button>
         <button onclick="hideOrShow()">Toggle</button>
-        <h2>Hover on this paragraph for Yellow</h2>
-        <h2>Click on this paragraph for Green example.</h2>
+        <h2 id="yellow" onmouseover="this.style.color = 'yellow'">Hover on this paragraph for Yellow</h2>
+        <h2 id="green" onclick="this.style.color = 'green'">Click on this paragraph for Green example.</h2>
         <script>
             function hideCapital(){
                 var hidden = document.getElementById("ott");
@@ -30,6 +30,7 @@
                 hs.style.display = "none";
                 }
             }
+
         </script>
     </body>
 </html>
