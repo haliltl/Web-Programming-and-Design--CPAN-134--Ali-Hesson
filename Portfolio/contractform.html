@@ -32,30 +32,85 @@
                 <br>
                 <p><h3>Contract form</h3></p>
                 <p>Please fill out the information below if you would like a copy of my contract, or click this <a href="contractform.html">Link</a> to download a copy </p>
-                <form action="formsubmission.html" method="get" class="contractform">
+                <form action="formsubmission.html" method="post" class="contractform">
                     <fieldset><legend>Contract Form</legend>
-                        <br>
-                        First Name 
-                        <input type="text" name="fname" id="Firstname" minlength="1" required>
-                        <br>
-                        <br>
-                        Last Name
-                        <input type="text" name="lname" id="Lastname" minlength="1" required>
-                        <br>
-                        <br>
-                        Company
-                        <input type="text" name="cname" id="Companyname">
-                        <br>
-                        <br>
-                        Email Address
-                        <input type="text" name="eaddress" id="Emailaddress" required>
-                        <br>
-                        <br>
-                        <input type="submit" name="sbutton" id="Submitbutton" value="Submit"> <input type="reset" name="rbutton" id="Resetbutton" value="Reset">
+                        <form id="stu_form" name="stu_form"action="" method="get">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname"name="fname">
+                            <span id="fname_error">*</span><br>
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname"name="lname">
+                            <span id="lname_error">*</span><br>
+                            <label for="m1">Email Address:</label>
+                            <input type="text" id="m1" name="m1">
+                            <span id="m1_error">*</span><br>
+                            <label for="m2">Phone Number:</label>
+                            <input type="text" id="m2" name="m2">
+                            <span id="m2_error">*</span><br>
+                            <label for="m3">Company:</label>
+                            <input type="text" id="m3" name="m3">
+                            <span id="m3_error">*</span><br>
+                            <blockquote><input type="button" id="validate"value="Validate"> <button onsubmit="">Submit</button></blockquote>
+                            <br>
+                            <p id="results"></p>
+                        </form>
                     </fieldset>
                 </form>
             </main>
         </div>
+        <script>
+            var $ = function (id) {
+            return document.getElementById(id);
+            }
+                var validateInput = function () {
+                var fname = $("fname").value;
+                var lname = $("lname").value;
+                var m1 = $("m1").value;
+                var m2 = $("m2").value;
+                var m3 = $("m3").value;
+                var isValid = true;
+            
+                    if (fname == "") {
+                        $("fname_error").firstChild.nodeValue ="This field is required.";
+                        isValid = false;
+                    }
+                    else { 
+                        $("fname_error").firstChild.nodeValue = ""; 
+                    }
+                    if (lname == "") {
+                        $("lname_error").firstChild.nodeValue ="This field is required.";
+                        isValid = false;
+                    }
+                    else { 
+                        $("lname_error").firstChild.nodeValue = ""; 
+                    }
+                    if (m1 == "") {
+                        $("m1_error").firstChild.nodeValue ="This field is required.";
+                        isValid = false;
+                    }
+                    else { 
+                        $("m1_error").firstChild.nodeValue = ""; 
+                    }
+                    if (m2 == "") {
+                        $("m2_error").firstChild.nodeValue ="This field is required.";
+                        isValid = false;
+                    }
+                    else { 
+                        $("m2_error").firstChild.nodeValue = ""; 
+                    }
+                    if (m3 == "") {
+                        $("m3_error").firstChild.nodeValue ="This field is required.";
+                        isValid = false;
+                    }
+                    else { 
+                        $("m3_error").firstChild.nodeValue = ""; 
+                    }
+                }   
+                document.addEventListener("DOMContentLoaded", function() {
+                    $("validate").onclick = validateInput;});
+
+
+        </script>
 
         <div id="contractform-footer" class="contractform-footer">
             <footer>
